@@ -1,6 +1,4 @@
-var button1 = document.getElementById("button1");
 var portfolioPostsContainer = document.getElementById("dynamicContainer");
-if(button1){
 	document.addEventListener('DOMContentLoaded', function() {
 var ourRequest = new XMLHttpRequest();
 ourRequest.open('GET', 'http://sympozjum.e-gap.pl/wp-json/wp/v2/posts?per_page=1');
@@ -20,7 +18,7 @@ ourRequest.onerror = function() {
 ourRequest.send();
 	
 	});
-}
+
 
 function createHTML(postsData){
 	var htmlString = '';
